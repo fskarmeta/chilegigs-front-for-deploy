@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Navlist } from "./navlist";
 import { useHistory } from "react-router-dom";
-import { Context } from "../../store/appContext";
+import { Context } from "../store/appContext";
 import "./styles/navbar.css";
 
 export const Navbar = () => {
