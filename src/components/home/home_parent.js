@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 //bafian
-import { useHistory } from "react-router-dom";
+
 import { Context } from "../../store/appContext";
 //
 // import { objetosGlobales } from "../../placeholder/objetoglobal";
@@ -17,8 +17,6 @@ const HomeParent = () => {
   const { store } = useContext(Context);
   const [isLoaded, setIsLoaded] = useState(false);
   const [home, setHome] = useState(Home);
-
-  let history = useHistory();
 
   useEffect(() => {
     fetch(`${store.fetchUrl}objetos`, {
@@ -40,14 +38,6 @@ const HomeParent = () => {
         setIsLoaded(true);
         setHome(Home);
       });
-    if (store.perfil_status === "inactive") {
-      if (store.role === "dj") {
-        history.push("/dj/edit");
-      }
-      if (store.role === "client") {
-        history.push("/client/edit");
-      }
-    }
   }, [store.fetchUrl]);
 
   if (!isLoaded) {
