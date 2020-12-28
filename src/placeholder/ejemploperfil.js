@@ -1,0 +1,77 @@
+ export const ejemploPerfil = {
+  id: 1234,
+  dj_id: 3,
+  status: "activo",
+  artista: "Dj Lucifer",
+  ciudad: "Antofagasta",
+  pais: "Chile",
+  mixcloud: "https://www.mixcloud.com/fsaini",
+  soundcloud: "https://www.soundcloud.com/bafian",
+  instagram: "https://www.instagram.com/",
+  generos: ["Acid", "House", "Etnic"],
+  servicios: ["Cumpleaños", "Matrimonios", "Eventos Coorporativos", "Clubs"],
+  tecnica: "Digital",
+  agregar_cancion: true,
+  url_cancion: "/NTSRadio/shanti-celeste-w-franco-saini-14th-may-2020/",
+  biografia:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus accumsan efficitur. Praesent metus augue, mollis sit amet iaculis sit amet, fringilla placerat quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla dapibus enim vel lacinia placerat. Mauris condimentum viverra ipsum.",
+  dur_min: "1:00 hrs",
+  dur_max: "3:30 hrs",
+  viajes: "Si",
+  staff: 0,
+  imagen:
+    "https://res.cloudinary.com/chilegigs/image/upload/v1607731050/profiles/wxbqmi1a83aoxqdlzfxj.jpg",
+  arrienda_equipos: "no",
+  requisitos: {
+    equipos: ["1 Parlantes Allen 220", "1 Tornamesa Technics 12000"],
+    escenario: ["1 Mesa 1.5x4 mts2", "2 Pantallas Led"],
+    foodanddrinks: ["2 Botella de CocaCola", "3 Snacks Vegetarianos"],
+  },
+  datos: {
+    nombre: "Javier",
+    apellido: "Perez",
+    nacionalidad: "Chilena",
+    celular: "991 432 323",
+    rut: "16423332-3",
+    calle: "Las Perdices",
+    numero: "1313",
+    ciudad: "Santiago",
+    region: "RM",
+    pais: "Chile",
+  },
+  suma_rating: 25,
+  contrataciones: 6,
+  feedback: [
+    {
+      gig_id: 233,
+      fecha: "22 Nov 2020",
+      evento: "Luna Loca Festival",
+      nombre_cliente: "Manuel Gonzales",
+      artista: "Dj Lucifer",
+      by_client_rating: 5,
+      by_client_commentary: "Excelente trabajo!",
+    },
+    {
+      gig_id: 423,
+      fecha: "25 Sept, 2020",
+      evento: "Cumpleaños Felipe",
+      nombre_cliente: "Felipe Rojas",
+      atista: "Dj Lucifer",
+      by_client_rating: 4,
+      by_client_commentary:
+        "Llego algo atrasado, pero fue el alma de la fiesta!",
+    },
+  ],
+};
+
+
+export const ejemploPerfilCliente = {
+  status: "inactive",
+  nombre: "Juan",
+  apellido: "Perez",
+  imagen: "algo.jpg",
+  rut: "13234323-3",
+  nacionalidad: "Chileno",
+  pais: "Chile",
+  biografia: "hola soy juan",
+};
