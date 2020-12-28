@@ -38,6 +38,14 @@ const HomeParent = () => {
         setIsLoaded(true);
         setHome(Home);
       });
+    if (store.perfil_status === "inactive") {
+      if (store.role === "dj") {
+        history.push("/dj/edit");
+      }
+      if (store.role === "client") {
+        history.push("/client/edit");
+      }
+    }
   }, [store.fetchUrl]);
 
   if (!isLoaded) {
