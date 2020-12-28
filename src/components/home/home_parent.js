@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 //bafian
-
+import { useHistory } from "react-router-dom";
 import { Context } from "../../store/appContext";
 //
 // import { objetosGlobales } from "../../placeholder/objetoglobal";
@@ -17,6 +17,8 @@ const HomeParent = () => {
   const { store } = useContext(Context);
   const [isLoaded, setIsLoaded] = useState(false);
   const [home, setHome] = useState(Home);
+
+  let history = useHistory();
 
   useEffect(() => {
     fetch(`${store.fetchUrl}objetos`, {
